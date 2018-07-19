@@ -18,14 +18,12 @@ CREATE TABLE `Users` (
 
 CREATE TABLE `feedback` (
     `feedbackId` INT(10) NOT NULL AUTO_INCREMENT UNIQUE,	
-    `userId` INT(10),
     `name` INT(10) NOT NULL,
 	`email` VARCHAR(50) NOT NULL,
 	`subject` VARCHAR(100) NOT NULL,
 	`message` varchar(1000),
 	`submittedDate` DATE NOT NULL
 );
-ALTER TABLE `feedback` ADD CONSTRAINT `feedback_fk0` FOREIGN KEY (`userId`) REFERENCES `Users`(`userId`);
 
 CREATE TABLE `cateringservices`.`pwdQuestionaries` (
 	`pwdQuestionarieId` INT(10) NOT NULL AUTO_INCREMENT UNIQUE,
