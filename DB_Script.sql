@@ -9,7 +9,7 @@ CREATE TABLE `Users` (
 	`password` varchar(30) NOT NULL,
 	`role` varchar(20) NOT NULL,
 	`email` varchar(50) NOT NULL UNIQUE,
-	`phone` INT(20) NOT NULL UNIQUE,
+	`phone` varchar(15) NOT NULL UNIQUE,
 	`status` varchar(10) NOT NULL,
 	`createDate` DATE,
 	`lastModifiedDate` DATE,
