@@ -28,7 +28,7 @@ CREATE TABLE `feedback` (
 CREATE TABLE `cateringservices`.`pwdQuestionaries` (
 	`pwdQuestionarieId` INT(10) NOT NULL AUTO_INCREMENT UNIQUE,
 	`userId` INT(10) NOT NULL,
-	`username` varchar(30) NOT NULL UNIQUE,
+	`username` varchar(30) NOT NULL UNIQUE,l
 	`email` varchar(50) NOT NULL UNIQUE,
 	`question1` varchar(100) NOT NULL,
 	`answer1` varchar(50) NOT NULL,
@@ -51,7 +51,7 @@ ALTER TABLE `orderRegister` ADD CONSTRAINT `orderRegister_fk0` FOREIGN KEY (`use
 CREATE TABLE `Items` (
 	`itemId` INT NOT NULL AUTO_INCREMENT,
 	`itemName` varchar(50) NOT NULL UNIQUE,
-	`category` varchar(30) NOT NULL UNIQUE,
+	`category` varchar(30) NOT NULL,
     `quantity` INT(3) NOT NULL,
 	`price` INT(5) NOT NULL,
 	`loyalPoints` INT(3) NOT NULL,
@@ -68,7 +68,8 @@ CREATE TABLE `orderItems` (
 	`itemPrice` INT(5) NOT NULL,
 	`itemPoints` INT(5) NOT NULL,
 	`userId` INT(10) NOT NULL,
-	`orderDate` DATE NOT NULL
+	`orderDate` DATE NOT NULL, 
+	`category` VARCHAR(30) NOT NULL
 );
 
 ALTER TABLE `orderItems` ADD CONSTRAINT `orderItems_fk1` FOREIGN KEY (`ItemId`) REFERENCES `Items`(`itemId`);
