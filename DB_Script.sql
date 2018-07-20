@@ -60,8 +60,8 @@ CREATE TABLE `Items` (
 );
 
 CREATE TABLE `orderItems` (
-	`orderItemId` INT(10) NOT NULL UNIQUE, 
-	`orderId` INT(10) NOT NULL UNIQUE,
+	`orderItemId` INT(10) NOT NULL UNIQUE AUTO_INCREMENT, 
+	`orderId` INT(10) NOT NULL AUTO_INCREMENT,
 	`ItemId` INT(10) NOT NULL UNIQUE,
 	`itemName` varchar(20) NOT NULL UNIQUE,
 	`itemQty` INT(5) NOT NULL,
@@ -76,7 +76,7 @@ ALTER TABLE `orderItems` ADD CONSTRAINT `orderItems_fk1` FOREIGN KEY (`ItemId`) 
 ALTER TABLE `orderItems` ADD CONSTRAINT `orderItems_fk2` FOREIGN KEY (`userId`) REFERENCES `Users`(`userId`);
 
 CREATE TABLE `userOrders` (
-	`userOrderId` INT(10) NOT NULL UNIQUE,
+	`userOrderId` INT(10) NOT NULL UNIQUE AUTO_INCREMENT,
 	`orderId` INT(10) NOT NULL UNIQUE,
 	`userId` INT(10) NOT NULL,
 	`quantity` INT(10) NOT NULL,
