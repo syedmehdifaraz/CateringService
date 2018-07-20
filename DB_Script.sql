@@ -18,7 +18,7 @@ CREATE TABLE `Users` (
 
 CREATE TABLE `feedback` (
     `feedbackId` INT(10) NOT NULL AUTO_INCREMENT UNIQUE,	
-    `name` INT(10) NOT NULL,
+    `name` Varchar(30) NOT NULL,
 	`email` VARCHAR(50) NOT NULL,
 	`subject` VARCHAR(100) NOT NULL,
 	`message` varchar(1000),
