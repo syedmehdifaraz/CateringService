@@ -1,0 +1,226 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FullStack",
+		"_postman_id": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUserInfo-username",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/usersServices/getUser/survenka",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getPwdQuestions_username",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/pwdQuestionariesServices/getPwdQuestions/survenka",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "feedback",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/feedbackServices/addFeedback",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "suresh",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "survenka@teksystems.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "This is test subject for feedback",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "This is test message for feedback",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/usersServices/addUser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "test123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "test123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test123@teksystems.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "3333333335",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "active",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updatePwdQuestionaries",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/pwdQuestionariesServices/addPwdQuestions",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "1834",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "deepmoti",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "deepak.motiwala@teksystems.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "question1",
+							"value": "What is your native place?",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "answer1",
+							"value": "Gujarat",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "question2",
+							"value": "Where are you working currently?",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "answer2",
+							"value": "Teksystems",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getPwdQuestions_email",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/pwdQuestionariesServices/getPwdQuestions/survenka@teksystems.com",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUserInfo-userid",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/usersServices/getUser/1833",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
