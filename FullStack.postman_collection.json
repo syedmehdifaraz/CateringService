@@ -19,9 +19,31 @@
 			"response": []
 		},
 		{
+			"name": "getUserInfo-userid",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/usersServices/getUser/1833",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "getPwdQuestions_username",
 			"request": {
 				"url": "http://localhost:8085/ApacheCXF-API/services/pwdQuestionariesServices/getPwdQuestions/survenka",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getPwdQuestions_email",
+			"request": {
+				"url": "http://localhost:8085/ApacheCXF-API/services/pwdQuestionariesServices/getPwdQuestions/survenka@teksystems.com",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -201,23 +223,34 @@
 			"response": []
 		},
 		{
-			"name": "getPwdQuestions_email",
+			"name": "userLogin",
 			"request": {
-				"url": "http://localhost:8085/ApacheCXF-API/services/pwdQuestionariesServices/getPwdQuestions/survenka@teksystems.com",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "getUserInfo-userid",
-			"request": {
-				"url": "http://localhost:8085/ApacheCXF-API/services/usersServices/getUser/1833",
-				"method": "GET",
-				"header": [],
-				"body": {},
+				"url": "http://localhost:8085/ApacheCXF-API/services/usersServices/userLogin/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "survenka12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Nb68h6Ajs7hyLsNqgyqDxA==",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
 				"description": ""
 			},
 			"response": []
