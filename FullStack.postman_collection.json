@@ -21,7 +21,7 @@
 		{
 			"name": "getUserInfo-userid",
 			"request": {
-				"url": "http://localhost:8085/ApacheCXF-API/services/usersServices/getUser/1833",
+				"url": "http://localhost:8085/ApacheCXF-API/services/usersServices/getUser/18335",
 				"method": "GET",
 				"header": [],
 				"body": {},
