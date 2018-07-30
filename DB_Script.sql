@@ -1,52 +1,64 @@
 -- Database/Schema Creation --
 CREATE DATABASE cateringservices;
 -- User Management Module Tables --
-CREATE TABLE `Users` (
-	`userId` INT(16) NOT NULL AUTO_INCREMENT,
-	`firstName` varchar(20) NOT NULL,
-	`lastName` varchar(20),
-	`username` varchar(30) NOT NULL UNIQUE,
-	`password` varchar(30) NOT NULL,
-	`role` varchar(20) NOT NULL,
-	`email` varchar(50) NOT NULL UNIQUE,
-	`phone` varchar(15) NOT NULL UNIQUE,
-	`status` varchar(10) NOT NULL,
-	`createDate` DATE,
-	`lastModifiedDate` DATE,
-	PRIMARY KEY (`userId`)
-);
+CREATE TABLE `cateringservices`.`users` (
+  `userId` INT(10) NOT NULL AUTO_INCREMENT,
+  `firstname` VARCHAR(30) NOT NULL,
+  `lastname` VARCHAR(30) NULL,
+  `username` VARCHAR(30) NOT NULL,
+  `password` VARCHAR(30) NOT NULL,
+  `role` VARCHAR(15) NOT NULL,
+  `email` VARCHAR(50) NOT NULL,
+  `phone` VARCHAR(10) NOT NULL,
+  `status` VARCHAR(10) NULL,
+  `createDate` DATE NULL,
+  `lastModifiedDate` DATE NULL,
+  UNIQUE INDEX `userId_UNIQUE` (`userId` ASC) VISIBLE,
+  PRIMARY KEY (`username`),
+  UNIQUE INDEX `username_UNIQUE` (`username` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
+  UNIQUE INDEX `phone_UNIQUE` (`phone` ASC) VISIBLE);
 
-CREATE TABLE `feedback` (
-    `feedbackId` INT(10) NOT NULL AUTO_INCREMENT UNIQUE,	
-    `name` Varchar(30) NOT NULL,
-	`email` VARCHAR(50) NOT NULL,
-	`subject` VARCHAR(100) NOT NULL,
-	`message` varchar(1000),
-	`submittedDate` DATE NOT NULL
-);
+CREATE TABLE `cateringservices`.`feedback` (
+  `feedbackInd` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `email` VARCHAR(50) NOT NULL,
+  `subject` VARCHAR(100) NOT NULL,
+  `message` VARCHAR(1000) NOT NULL,
+  `submittedDate` DATE NULL,
+  PRIMARY KEY (`feedbackInd`));
 
-CREATE TABLE `cateringservices`.`pwdQuestionaries` (
-	`pwdQuestionarieId` INT(10) NOT NULL AUTO_INCREMENT UNIQUE,
-	`userId` INT(10) NOT NULL,
-	`username` varchar(30) NOT NULL UNIQUE,l
-	`email` varchar(50) NOT NULL UNIQUE,
-	`question1` varchar(100) NOT NULL,
-	`answer1` varchar(50) NOT NULL,
-	`question2` varchar(100) NOT NULL,
-	`answer2` varchar(50) NOT NULL,
-	`createdDate` DATE,
-	`lastUpdatedDate` DATE
-);
-ALTER TABLE `cateringservices`.`pwdQuestionaries` ADD CONSTRAINT `pwdQuestionaries_fk0` FOREIGN KEY (`userId`) REFERENCES cateringservices.users(userId);
+CREATE TABLE `cateringservices`.`pwdquestionaries` (
+  `pwdQuestionarieId` INT(10) NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(30) NOT NULL,
+  `email` VARCHAR(50) NOT NULL,
+  `question1` VARCHAR(100) NOT NULL,
+  `answer1` VARCHAR(50) NOT NULL,
+  `question2` VARCHAR(100) NOT NULL,
+  `answer2` VARCHAR(50) NOT NULL,
+  `createdDate` DATE NULL,
+  `lastUpdatedDate` DATE NULL,
+  PRIMARY KEY (`pwdQuestionarieId`),
+  UNIQUE INDEX `username_UNIQUE` (`username` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
+  CONSTRAINT `fk_username`
+    FOREIGN KEY (`username`)
+    REFERENCES `cateringservices`.`users` (`username`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
-CREATE TABLE `orderRegister` (
-	`orderRegisterId` INT(10) NOT NULL AUTO_INCREMENT UNIQUE,
-	`userId` INT(10) NOT NULL,
-	`comingForLunch` varchar(5) NOT NULL DEFAULT 'No',
-	`lunchDate` DATE NOT NULL
-);
-
-ALTER TABLE `orderRegister` ADD CONSTRAINT `orderRegister_fk0` FOREIGN KEY (`userId`) REFERENCES `Users`(`userId`);
+CREATE TABLE `cateringservices`.`userlogin` (
+  `username` VARCHAR(30) NOT NULL,
+  `weekDay` INT(2) NOT NULL,
+  `sessionTime` DATETIME NOT NULL,
+  INDEX `fk_username_idx` (`username` ASC) VISIBLE,
+  CONSTRAINT `fk_loginusername`
+    FOREIGN KEY (`username`)
+    REFERENCES `cateringservices`.`users` (`username`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+	
 
 CREATE TABLE `Items` (
 	`itemId` INT NOT NULL AUTO_INCREMENT,
