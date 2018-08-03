@@ -59,42 +59,55 @@ CREATE TABLE `cateringservices`.`userlogin` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 	
+CREATE TABLE `cateringservices`.`itemsinventory` (
+  `itemid` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `quantity` INT(5) NULL,
+  `price` INT(5) NOT NULL,
+  `loyalpoints` INT(5) NOT NULL,
+  `category` VARCHAR(50) NOT NULL,
+  `stockavailable` VARCHAR(45) NULL,
+  `type` VARCHAR(30) NULL,
+  PRIMARY KEY (`itemid`),
+  UNIQUE INDEX `itemname_UNIQUE` (`name` ASC) VISIBLE);
 
-CREATE TABLE `Items` (
-	`itemId` INT NOT NULL AUTO_INCREMENT,
-	`itemName` varchar(50) NOT NULL UNIQUE,
-	`category` varchar(30) NOT NULL,
-    `quantity` INT(3) NOT NULL,
-	`price` INT(5) NOT NULL,
-	`loyalPoints` INT(3) NOT NULL,
-	`createDate` DATE NOT NULL,
-	PRIMARY KEY (`itemId`)
-);
+CREATE TABLE `orderitems` (
+  `orderitemid` int(5) NOT NULL,
+  `orderid` int(5) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `itemname` varchar(50) NOT NULL,
+  `itemqty` int(5) NOT NULL,
+  `itemprice` int(5) NOT NULL,
+  `itemloyalpoints` int(5) NOT NULL,
+  `itemcategory` varchar(30) NOT NULL,
+  `createddate` date NOT NULL,
+  PRIMARY KEY (`orderitemid`),
+  KEY `orderitems_fk_idx` (`orderid`),
+  KEY `orderitems_fk1_idx` (`username`),
+  CONSTRAINT `orderitems_fk0` FOREIGN KEY (`orderid`) REFERENCES `userorders` (`orderid`),
+  CONSTRAINT `orderitems_fk1` FOREIGN KEY (`username`) REFERENCES `users` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-CREATE TABLE `orderItems` (
-	`orderItemId` INT(10) NOT NULL UNIQUE AUTO_INCREMENT, 
-	`orderId` INT(10) NOT NULL AUTO_INCREMENT,
-	`ItemId` INT(10) NOT NULL UNIQUE,
-	`itemName` varchar(20) NOT NULL UNIQUE,
-	`itemQty` INT(5) NOT NULL,
-	`itemPrice` INT(5) NOT NULL,
-	`itemPoints` INT(5) NOT NULL,
-	`userId` INT(10) NOT NULL,
-	`orderDate` DATE NOT NULL, 
-	`category` VARCHAR(30) NOT NULL
-);
 
-ALTER TABLE `orderItems` ADD CONSTRAINT `orderItems_fk1` FOREIGN KEY (`ItemId`) REFERENCES `Items`(`itemId`);
-ALTER TABLE `orderItems` ADD CONSTRAINT `orderItems_fk2` FOREIGN KEY (`userId`) REFERENCES `Users`(`userId`);
+CREATE TABLE `cateringservices`.`ingredientsinventory` (
+  `ingredientid` INT NOT NULL AUTO_INCREMENT,
+  `ingredientname` VARCHAR(45) NOT NULL,
+  `quantity` INT(10) NOT NULL,
+  `type` VARCHAR(45) NULL,
+  PRIMARY KEY (`ingredientid`));
 
-CREATE TABLE `userOrders` (
-	`userOrderId` INT(10) NOT NULL UNIQUE AUTO_INCREMENT,
-	`orderId` INT(10) NOT NULL UNIQUE,
-	`userId` INT(10) NOT NULL,
-	`quantity` INT(10) NOT NULL,
-	`amount` INT(10) NOT NULL,
-	`loyalPoints` INT(10) NOT NULL,
-	`orderDate` DATE NOT NULL
-);
+CREATE TABLE `cateringservices`.`userorders` (
+  `orderid` INT(5) NOT NULL,
+  `username` VARCHAR(30) NOT NULL,
+  `orderquantity` INT(5) NOT NULL,
+  `orderamount` INT(10) NOT NULL,
+  `orderloyalpoints` INT(5) NOT NULL,
+  `ordercreatedate` DATE NOT NULL,
+  PRIMARY KEY (`orderid`),
+  INDEX `userorders_fk_idx` (`username` ASC) VISIBLE,
+  CONSTRAINT `userorders_fk`
+    FOREIGN KEY (`username`)
+    REFERENCES `cateringservices`.`users` (`username`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT);
 
-ALTER TABLE `userOrders` ADD CONSTRAINT `userOrders_fk0` FOREIGN KEY (`userId`) REFERENCES `Users`(`userId`);

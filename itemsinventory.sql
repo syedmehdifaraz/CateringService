@@ -1,0 +1,23 @@
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6566, "Veg Soup", 10,1,3, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6567, "Veg Salad", 10,2, 4, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6568, "Veg Sandwich", 10,3, 4, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6569, "Veg Pasta", 10,3, 4, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6570, "Mushroom Balls", 10,4, 4, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6571, "Chicken Soup", 10,2, 3, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6572, "Chicken Salad", 10,3, 4, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6573, "Chicken Sandwich", 10,3, 3, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6574, "Chicken Pasta", 10,3, 3, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6575, "Meat Salad", 10,4, 3, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6576, "Fish Salad", 10,4, 4, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6577, "Grilled Meat", 10,4, 3, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6578, "Meat Pasta", 10,4, 3, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6579, "Fish Fries", 10,4, 4, "NonVeg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6580, "Waterbottle ", 10,1, 4, "Drink", "Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6581, "Coke ", 10,3,3, "Drink", "Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6582, "Diet Coke", 10,4,3, "Drink", "Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6583, "Tomato Ketchup", 10,1,1, "Extras", "Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6584, "Sambal", 10,1,1, "Extras", "Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6585, "Mayonnaise", 10,1,1, "Extras", "Packaged");
+
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6586, "Tomato Soup", 10,2,2, "Veg", "Non-Packaged");
+INSERT INTO `cateringservices`.`itemsinventory`(`itemid`,`name`,`quantity`,`price`,`loyalpoints`,`category`,`type`) VALUES(6587, "Meat Soup", 10,3,4, "NonVeg", "Non-Packaged");
