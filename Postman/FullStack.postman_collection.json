@@ -1,0 +1,364 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FullStack",
+		"_postman_id": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUser_username",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/usersServices/getUser/survenka",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUser_userid",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/usersServices/getUser/1864",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getPwdQuestions_username",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/getPwdQuestions/deepmoti",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getPwdQuestions_email",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/getPwdQuestions/deepmoti@teksystems.com",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "userValidations_username",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/survenka",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "userValidations_phone",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/8008885847",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "userValidations_email",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/survenka@teksystems.com",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "feedback",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/feedbackServices/addFeedback",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "suresh",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "survenka@teksystems.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "This is test subject for feedback",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "This is test message for feedback",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/usersServices/addUser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "shraddhey1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Pagaria1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "spagaria1234",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "spagaria",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "spagaria123@teksystems.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "99999999958",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addPwdQuestions",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/addPwdQuestions",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "spagaria1234",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "spagaria123@teksystems.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "question1",
+							"value": "What is your work city?",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "answer1",
+							"value": "Hyderabad",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "question2",
+							"value": "Where are you working currently?",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "answer2",
+							"value": "Teksystems",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "userLogin",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/usersServices/userLogin/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "deepmoti",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "MTIz",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "validatePwdAnswers",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/validatePwdAnswers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "deepmoti",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "question1",
+							"value": "What is your native place?",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "answer1",
+							"value": "Gujarat",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "question2",
+							"value": "Where are you working currently?",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "answer2",
+							"value": "Teksystems",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser_Password",
+			"request": {
+				"url": "{{ApacheCXFEndPoint}}/usersServices/updateUser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "deepmoti",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "deepmoti",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
