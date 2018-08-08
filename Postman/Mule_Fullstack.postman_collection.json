@@ -1,0 +1,682 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Mule_Fullstack",
+		"_postman_id": "df9cfbac-8dc1-03e7-cc77-a00143e7c3d6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MySQL",
+			"description": "",
+			"item": [
+				{
+					"name": "getUserByUsername",
+					"request": {
+						"url": {
+							"raw": "{{MuleEndPoint}}/userServices/getUser?userName=deepmoti",
+							"host": [
+								"{{MuleEndPoint}}"
+							],
+							"path": [
+								"userServices",
+								"getUser"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "deepmoti",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validatePwdAnswersByEmail",
+					"request": {
+						"url": "{{MuleEndPoint}}/pwdQuestionariesServices/validatePwdAnswers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "deepak.motiwala@teksystems.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "question1",
+									"value": "What is your native place?",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "answer1",
+									"value": "Gujarat",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "question2",
+									"value": "Where are you working currently?",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "answer2",
+									"value": "Teksystems",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getUserByEmail",
+					"request": {
+						"url": {
+							"raw": "{{MuleEndPoint}}/userServices/getUser?email=testuser@teksystems.com",
+							"host": [
+								"{{MuleEndPoint}}"
+							],
+							"path": [
+								"userServices",
+								"getUser"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "testuser@teksystems.com",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validateUserEmail",
+					"request": {
+						"url": {
+							"raw": "{{MuleEndPoint}}/userServices/userValidations?email=testuser1@teksystems.com",
+							"host": [
+								"{{MuleEndPoint}}"
+							],
+							"path": [
+								"userServices",
+								"userValidations"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "testuser1@teksystems.com",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validateUserPhonenumber",
+					"request": {
+						"url": {
+							"raw": "{{MuleEndPoint}}/userServices/userValidations?phone=8008885846",
+							"host": [
+								"{{MuleEndPoint}}"
+							],
+							"path": [
+								"userServices",
+								"userValidations"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "8008885846",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validateUsername",
+					"request": {
+						"url": {
+							"raw": "{{MuleEndPoint}}/userServices/userValidations?userName=survenka1",
+							"host": [
+								"{{MuleEndPoint}}"
+							],
+							"path": [
+								"userServices",
+								"userValidations"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "survenka1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPwdQuestionsByUsername",
+					"request": {
+						"url": {
+							"raw": "{{MuleEndPoint}}/pwdQuestionariesServices/getPwdQuestions?userName=deepmoti1",
+							"host": [
+								"{{MuleEndPoint}}"
+							],
+							"path": [
+								"pwdQuestionariesServices",
+								"getPwdQuestions"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "deepmoti1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPwdQuestionsByEmail",
+					"request": {
+						"url": {
+							"raw": "{{MuleEndPoint}}/pwdQuestionariesServices/getPwdQuestions?email=spagaria1@teksystems.com",
+							"host": [
+								"{{MuleEndPoint}}"
+							],
+							"path": [
+								"pwdQuestionariesServices",
+								"getPwdQuestions"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "spagaria1@teksystems.com",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validatePwdAnswersByUsername",
+					"request": {
+						"url": "{{MuleEndPoint}}/pwdQuestionariesServices/validatePwdAnswers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "deepmoti",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "question1",
+									"value": "What is your native place?",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "answer1",
+									"value": "Gujarat",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "question2",
+									"value": "Where are you working currently?",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "answer2",
+									"value": "Teksystems",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addUser",
+					"request": {
+						"url": "{{ApacheCXFEndPoint}}/usersServices/addUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "shraddhey1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Pagaria1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "spagaria1234",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "spagaria",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "spagaria123@teksystems.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "9999999995",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "a786488b-af15-439d-9bdb-5b1932b50c75",
+							"name": "addUser_usernameDuplicate",
+							"originalRequest": {
+								"url": "{{ApacheCXFEndPoint}}/usersServices/addUser",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "firstName",
+											"value": "shraddhey1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "lastName",
+											"value": "Pagaria1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "spagaria1234",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "spagaria",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "spagaria123@teksystems.com",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "9999999995",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "65",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Fri, 03 Aug 2018 11:37:21 GMT",
+									"description": "The date and time that the message was sent"
+								}
+							],
+							"cookie": [],
+							"responseTime": 235,
+							"body": "{\"statusReason\":\"Username already Registered\",\"status\":\"failure\"}"
+						}
+					]
+				},
+				{
+					"name": "userLogin",
+					"request": {
+						"url": "{{MuleEndPoint}}/userServices/userLogin",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "survenka",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "dGVzdDEyMw==",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MongoDb",
+			"description": "",
+			"item": [
+				{
+					"name": "addUser",
+					"request": {
+						"url": "{{MuleEndPoint1}}/adduser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\":\"deepak\",\n\t\"lastName\":\"motiwala\",\n\t\"userName\":\"deepmoti\",\n\t\"password\":\"deepmoti\",\n\t\"email\":\"deepak.motiwala@teksystems.com\",\n\t\"phone\":3333333333\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"url": "{{MuleEndPoint}}/user",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userName\":\"deepmoti\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getUser_failure",
+					"request": {
+						"url": "{{MuleEndPoint1}}/user",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userName\":\"skurra\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validateUserByUsername",
+					"request": {
+						"url": "{{MuleEndPoint1}}/validateUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userName\":\"surevell\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validateUserByPhone",
+					"request": {
+						"url": "{{MuleEndPoint1}}/validateUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phone\":7777777777\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validateUserByEmail",
+					"request": {
+						"url": "{{MuleEndPoint1}}/validateUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"skurra@teksystems.com\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validateUser",
+					"request": {
+						"url": "{{MuleEndPoint1}}/validateUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userName\":\"surevell\",\n\t\"phone\":8008885847,\n\t\"email\":\"survenka@teksystems.com\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DroolsTest",
+			"request": {
+				"url": "http://localhost:8081/drools",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"suresh\",\n\t\"age\":9,\n\t\"policyType\":\"Policy1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "dailyMenu",
+			"request": {
+				"url": "http://localhost:8081/cateringservices/getTodayMenu",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"menuDay\":\"Thursday\",\n\t\"menuDate\":\"03-08-2018\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1180 @@
+{
+	"id": "996840ac-2bfa-bfad-0eaf-314c16210f5d",
+	"name": "FullStack",
+	"allTests": [],
+	"timestamp": 1533295669304,
+	"collection_id": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "39bef350-044f-5b8e-ef79-2e756b29b1fa",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+		"name": "FullStack",
+		"description": "",
+		"order": ["7801e5ed-1c07-6cb0-b009-fa6f8c0eaa7e",
+		"cf3f02fa-e73e-5c09-b523-0ceb89ea71ef",
+		"e6a92097-c4c6-1f27-467f-13cb5019a8eb",
+		"17c767f4-4e0c-5f9b-b0be-3ce912a5cffe",
+		"3e511c15-4651-7a74-8084-25f22fb6aec2",
+		"4dbecdcf-a293-7651-7eea-d0d043ebab92",
+		"0ad4f4ac-dc56-3768-fd45-b9754cd63dbc",
+		"43126fdd-4180-2ea9-d089-324e0ba4f30c",
+		"ecc44e07-c9ae-b44e-620f-11459453516e",
+		"01ff81ca-950c-6876-1e73-33096ee201af",
+		"664bb8b3-f33d-a564-252b-64be4460886a",
+		"841bda43-b63c-63a4-3c08-cbef92a87b6c",
+		"04c748e5-18cf-c894-9ee7-d92ea7985998"],
+		"folders": [],
+		"folders_order": [],
+		"requests": [{
+			"id": "01ff81ca-950c-6876-1e73-33096ee201af",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [{
+				"key": "Content-Type",
+				"value": "application/x-www-form-urlencoded",
+				"description": "",
+				"enabled": true
+			}],
+			"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/addPwdQuestions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [{
+				"key": "username",
+				"value": "spagaria1234",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "email",
+				"value": "spagaria123@teksystems.com",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "question1",
+				"value": "What is your work city?",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "answer1",
+				"value": "Hyderabad",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "question2",
+				"value": "Where are you working currently?",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "answer2",
+				"value": "Teksystems",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			}],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533278494212,
+			"name": "addPwdQuestions",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "04c748e5-18cf-c894-9ee7-d92ea7985998",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [{
+				"key": "Content-Type",
+				"value": "application/x-www-form-urlencoded",
+				"description": "",
+				"enabled": true
+			}],
+			"url": "{{ApacheCXFEndPoint}}/usersServices/updateUser",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [{
+				"key": "username",
+				"value": "bhavana",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "password",
+				"value": "bhavana",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			}],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533292816350,
+			"name": "updateUser_Password",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "0ad4f4ac-dc56-3768-fd45-b9754cd63dbc",
+			"headers": "",
+			"headerData": [],
+			"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/survenka@teksystems.com",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533278468010,
+			"name": "userValidations_email",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "17c767f4-4e0c-5f9b-b0be-3ce912a5cffe",
+			"headers": "",
+			"headerData": [],
+			"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/getPwdQuestions/deepmoti@teksystems.com",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533292671005,
+			"name": "getPwdQuestions_email",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "3e511c15-4651-7a74-8084-25f22fb6aec2",
+			"headers": "",
+			"headerData": [],
+			"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/survenka",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533278446007,
+			"name": "userValidations_username",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "43126fdd-4180-2ea9-d089-324e0ba4f30c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [{
+				"key": "Content-Type",
+				"value": "application/x-www-form-urlencoded",
+				"description": "",
+				"enabled": true
+			}],
+			"url": "{{ApacheCXFEndPoint}}/feedbackServices/addFeedback",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [{
+				"key": "name",
+				"value": "suresh",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "email",
+				"value": "survenka@teksystems.com",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "subject",
+				"value": "This is test subject for feedback",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "message",
+				"value": "This is test message for feedback",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			}],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533278482897,
+			"name": "feedback",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "4dbecdcf-a293-7651-7eea-d0d043ebab92",
+			"headers": "",
+			"headerData": [],
+			"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/8008885847",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533278462548,
+			"name": "userValidations_phone",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "664bb8b3-f33d-a564-252b-64be4460886a",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [{
+				"key": "Content-Type",
+				"value": "application/x-www-form-urlencoded",
+				"description": "",
+				"enabled": true
+			}],
+			"url": "{{ApacheCXFEndPoint}}/usersServices/userLogin/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [{
+				"key": "username",
+				"value": "deepmoti",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "password",
+				"value": "ZGVlcG1vdGk=",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			}],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533292819103,
+			"name": "userLogin",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "7801e5ed-1c07-6cb0-b009-fa6f8c0eaa7e",
+			"headers": "",
+			"headerData": [],
+			"url": "{{ApacheCXFEndPoint}}/usersServices/getUser/survenka",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533277884172,
+			"name": "getUser_username",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "841bda43-b63c-63a4-3c08-cbef92a87b6c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [{
+				"key": "Content-Type",
+				"value": "application/x-www-form-urlencoded",
+				"description": "",
+				"enabled": true
+			}],
+			"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/validatePwdAnswers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [{
+				"key": "username",
+				"value": "deepmoti",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "question1",
+				"value": "What is your native place?",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "answer1",
+				"value": "Gujarat",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "question2",
+				"value": "Where are you working currently?",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "answer2",
+				"value": "Teksystems",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			}],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533278195380,
+			"name": "validatePwdAnswers",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "cf3f02fa-e73e-5c09-b523-0ceb89ea71ef",
+			"headers": "",
+			"headerData": [],
+			"url": "{{ApacheCXFEndPoint}}/usersServices/getUser/1234",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533292634069,
+			"name": "getUser_userid",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "e6a92097-c4c6-1f27-467f-13cb5019a8eb",
+			"headers": "",
+			"headerData": [],
+			"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/getPwdQuestions/deepmoti",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533278407636,
+			"name": "getPwdQuestions_username",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		},
+		{
+			"id": "ecc44e07-c9ae-b44e-620f-11459453516e",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [{
+				"key": "Content-Type",
+				"value": "application/x-www-form-urlencoded",
+				"description": "",
+				"enabled": true
+			}],
+			"url": "{{ApacheCXFEndPoint}}/usersServices/addUser",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				
+			},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [{
+				"key": "firstName",
+				"value": "shraddhey1",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "lastName",
+				"value": "Pagaria1",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "username",
+				"value": "spagaria1234",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "password",
+				"value": "spagaria",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "email",
+				"value": "spagaria123@teksystems.com",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			},
+			{
+				"key": "phone",
+				"value": "9999999995",
+				"description": "",
+				"type": "text",
+				"enabled": true
+			}],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {
+				
+			},
+			"time": 1533292822347,
+			"name": "addUser",
+			"description": "",
+			"collectionId": "99837de2-b6a0-298a-2b4e-8e4d07ed38b6",
+			"responses": []
+		}],
+		"timestamp": 1531203960348,
+		"synced": false,
+		"syncedFilename": "",
+		"remote_id": 0,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"owner": "808981",
+		"subscribed": false,
+		"createdAt": 1531203960348,
+		"updatedAt": 1533290752976,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {
+			
+		},
+		"syncedPermissions": {
+			
+		},
+		"sharedWithTeam": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [{
+		"id": "7801e5ed-1c07-6cb0-b009-fa6f8c0eaa7e",
+		"name": "getUser_username",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/getUser/survenka",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [64],
+		"allTests": [{
+			
+		}],
+		"time": 64,
+		"totalRequestTime": 64,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "cf3f02fa-e73e-5c09-b523-0ceb89ea71ef",
+		"name": "getUser_userid",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/getUser/1234",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [63],
+		"allTests": [{
+			
+		}],
+		"time": 63,
+		"totalRequestTime": 63,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "e6a92097-c4c6-1f27-467f-13cb5019a8eb",
+		"name": "getPwdQuestions_username",
+		"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/getPwdQuestions/deepmoti",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [55],
+		"allTests": [{
+			
+		}],
+		"time": 55,
+		"totalRequestTime": 55,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "17c767f4-4e0c-5f9b-b0be-3ce912a5cffe",
+		"name": "getPwdQuestions_email",
+		"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/getPwdQuestions/deepmoti@teksystems.com",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [56],
+		"allTests": [{
+			
+		}],
+		"time": 56,
+		"totalRequestTime": 56,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "3e511c15-4651-7a74-8084-25f22fb6aec2",
+		"name": "userValidations_username",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/survenka",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [50],
+		"allTests": [{
+			
+		}],
+		"time": 50,
+		"totalRequestTime": 50,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "4dbecdcf-a293-7651-7eea-d0d043ebab92",
+		"name": "userValidations_phone",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/8008885847",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [58],
+		"allTests": [{
+			
+		}],
+		"time": 58,
+		"totalRequestTime": 58,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "0ad4f4ac-dc56-3768-fd45-b9754cd63dbc",
+		"name": "userValidations_email",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/survenka@teksystems.com",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [50],
+		"allTests": [{
+			
+		}],
+		"time": 50,
+		"totalRequestTime": 50,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "43126fdd-4180-2ea9-d089-324e0ba4f30c",
+		"name": "feedback",
+		"url": "{{ApacheCXFEndPoint}}/feedbackServices/addFeedback",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [132],
+		"allTests": [{
+			
+		}],
+		"time": 132,
+		"totalRequestTime": 132,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "ecc44e07-c9ae-b44e-620f-11459453516e",
+		"name": "addUser",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/addUser",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [84],
+		"allTests": [{
+			
+		}],
+		"time": 84,
+		"totalRequestTime": 84,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "01ff81ca-950c-6876-1e73-33096ee201af",
+		"name": "addPwdQuestions",
+		"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/addPwdQuestions",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 500,
+			"name": "Internal Server Error",
+			"detail": "A generic error message, given when no more specific message is suitable."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [98],
+		"allTests": [{
+			
+		}],
+		"time": 98,
+		"totalRequestTime": 98,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "664bb8b3-f33d-a564-252b-64be4460886a",
+		"name": "userLogin",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/userLogin/",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [55],
+		"allTests": [{
+			
+		}],
+		"time": 55,
+		"totalRequestTime": 55,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "841bda43-b63c-63a4-3c08-cbef92a87b6c",
+		"name": "validatePwdAnswers",
+		"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/validatePwdAnswers",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [52],
+		"allTests": [{
+			
+		}],
+		"time": 52,
+		"totalRequestTime": 52,
+		"iterationResults": {
+			
+		}
+	},
+	{
+		"id": "04c748e5-18cf-c894-9ee7-d92ea7985998",
+		"name": "updateUser_Password",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/updateUser",
+		"totalTime": 0,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"tests": {
+			
+		},
+		"testPassFailCounts": {
+			
+		},
+		"times": [62],
+		"allTests": [{
+			
+		}],
+		"time": 62,
+		"totalRequestTime": 62,
+		"iterationResults": {
+			
+		}
+	}],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 879,
+	"lifecycle": "done",
+	"willStop": false,
+	"requests": [{
+		"name": "getUser_username",
+		"id": "7801e5ed-1c07-6cb0-b009-fa6f8c0eaa7e",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/getUser/survenka",
+		"time": 64,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "getUser_userid",
+		"id": "cf3f02fa-e73e-5c09-b523-0ceb89ea71ef",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/getUser/1234",
+		"time": 63,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "getPwdQuestions_username",
+		"id": "e6a92097-c4c6-1f27-467f-13cb5019a8eb",
+		"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/getPwdQuestions/deepmoti",
+		"time": 55,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "getPwdQuestions_email",
+		"id": "17c767f4-4e0c-5f9b-b0be-3ce912a5cffe",
+		"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/getPwdQuestions/deepmoti@teksystems.com",
+		"time": 56,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "userValidations_username",
+		"id": "3e511c15-4651-7a74-8084-25f22fb6aec2",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/survenka",
+		"time": 50,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "userValidations_phone",
+		"id": "4dbecdcf-a293-7651-7eea-d0d043ebab92",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/8008885847",
+		"time": 58,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "userValidations_email",
+		"id": "0ad4f4ac-dc56-3768-fd45-b9754cd63dbc",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/userValidations/survenka@teksystems.com",
+		"time": 50,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "feedback",
+		"id": "43126fdd-4180-2ea9-d089-324e0ba4f30c",
+		"url": "{{ApacheCXFEndPoint}}/feedbackServices/addFeedback",
+		"time": 132,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "addUser",
+		"id": "ecc44e07-c9ae-b44e-620f-11459453516e",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/addUser",
+		"time": 84,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "addPwdQuestions",
+		"id": "01ff81ca-950c-6876-1e73-33096ee201af",
+		"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/addPwdQuestions",
+		"time": 98,
+		"responseCode": {
+			"code": 500,
+			"name": "Internal Server Error",
+			"detail": "A generic error message, given when no more specific message is suitable."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "userLogin",
+		"id": "664bb8b3-f33d-a564-252b-64be4460886a",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/userLogin/",
+		"time": 55,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "validatePwdAnswers",
+		"id": "841bda43-b63c-63a4-3c08-cbef92a87b6c",
+		"url": "{{ApacheCXFEndPoint}}/pwdQuestionariesServices/validatePwdAnswers",
+		"time": 52,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	},
+	{
+		"name": "updateUser_Password",
+		"id": "04c748e5-18cf-c894-9ee7-d92ea7985998",
+		"url": "{{ApacheCXFEndPoint}}/usersServices/updateUser",
+		"time": 62,
+		"responseCode": {
+			"code": 200,
+			"name": "OK",
+			"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+		},
+		"testPassFailCounts": {
+			
+		},
+		"gridTitles": [],
+		"gridData": [[]],
+		"tests": {
+			
+		}
+	}],
+	"synced": false
+}

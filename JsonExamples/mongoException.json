@@ -1,0 +1,9 @@
+{
+    "serverUsed": "localhost/127.0.0.1:27017",
+    "connectionId": 53,
+    "err": "E11000 duplicate key error collection: CateringServices.users index: email dup key: { : \"suresh.vv47test@gmail.com\" }",
+    "code": 11000,
+    "codeName": "DuplicateKey",
+    "n": 0,
+    "ok": 1
+}
