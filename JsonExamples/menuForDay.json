@@ -1,0 +1,53 @@
+{	
+"Items": [{
+		"itemLoyaltyPoints": 3,
+		"itemName": "Chicken Soup",
+		"itemPrice": 2
+	},
+	{
+		"itemLoyaltyPoints": 3,
+		"itemName": "Chicken Sandwich",
+		"itemPrice": 3
+	},
+	{
+		"itemLoyaltyPoints": 3,
+		"itemName": "Chicken Pasta",
+		"itemPrice": 3
+	},
+	{
+		"itemLoyaltyPoints": 4,
+		"itemName": "Veg Sandwich",
+		"itemPrice": 3
+	},
+	{
+		"itemLoyaltyPoints": 3,
+		"itemName": "Coke",
+		"itemPrice": 3
+	},
+	{
+		"itemLoyaltyPoints": 3,
+		"itemName": "Diet Coke",
+		"itemPrice": 4
+	},
+	{
+		"itemLoyaltyPoints": 4,
+		"itemName": "Water",
+		"itemPrice": 1
+	},
+	{
+		"itemLoyaltyPoints": 1,
+		"itemName": "Tomato Ketchup",
+		"itemPrice": 1
+	},
+	{
+		"itemLoyaltyPoints": 1,
+		"itemName": "Sambal",
+		"itemPrice": 1
+	},
+	{
+		"itemLoyaltyPoints": 1,
+		"itemName": "Mayonnaise",
+		"itemPrice": 1
+	}],
+	"Day": "Thursday"
+}

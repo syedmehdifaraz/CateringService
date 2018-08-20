@@ -373,7 +373,7 @@
 					},
 					"response": [
 						{
-							"id": "a786488b-af15-439d-9bdb-5b1932b50c75",
+							"id": "c5000e49-5917-4c2e-a5d2-b67561084017",
 							"name": "addUser_usernameDuplicate",
 							"originalRequest": {
 								"url": "{{ApacheCXFEndPoint}}/usersServices/addUser",
@@ -510,16 +510,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"firstName\":\"deepak\",\n\t\"lastName\":\"motiwala\",\n\t\"userName\":\"deepmoti\",\n\t\"password\":\"deepmoti\",\n\t\"email\":\"deepak.motiwala@teksystems.com\",\n\t\"phone\":3333333333\n}"
+							"raw": "{\n\t\"firstName\":\"faraz\",\n\t\"lastName\":\"ahmed\",\n\t\"userName\":\"farazahmed4\",\n\t\"password\":\"farazahmed\",\n\t\"email\":\"faraz4@teksystems.com\",\n\t\"phone\":8008885853\n}"
 						},
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "getUser",
+					"name": "userLogin",
 					"request": {
-						"url": "{{MuleEndPoint}}/user",
+						"url": "{{MuleEndPoint1}}/userLogin",
 						"method": "POST",
 						"header": [
 							{
@@ -530,7 +530,107 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"userName\":\"deepmoti\"\n}"
+							"raw": "{\r\n\"userName\":\"survenka1\",\r\n\"password\":\"survenka\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "updateUserPassword",
+					"request": {
+						"url": "{{MuleEndPoint1}}/updateLoginPwd",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userName\":\"survenka\",\r\n\"password\":\"survenka1\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "user_addPwdQuestions",
+					"request": {
+						"url": "{{MuleEndPoint1}}/addPwdQuestions",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userName\":\"survenka1\",\r\n\"email\":\"survenka@teksystems.com\",\r\n\"question1\":\"Where are you working currently?\",\r\n\"answer1\":\"Teksystems\",\r\n\"question2\":\"What is your place of birth\",\r\n\"answer2\":\"kadapa\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addUserFeedback",
+					"request": {
+						"url": "{{MuleEndPoint}}/addUserFeedback",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userName\":\"survenka\",\r\n\"email\":\"survenka@teksystems.com\",\r\n\"subject\":\"test subject\",\r\n\"message\":\"test message\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validatePwdAnswers",
+					"request": {
+						"url": "{{MuleEndPoint1}}/validatePwdAnswers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userName\":\"survenka\",\r\n\"email\":\"survenka@teksystems.com\",\r\n\"question1\":\"Where are u working currently?\",\r\n\"answer1\":\"Teksystems\",\r\n\"question2\":\"What is your place of birth\",\r\n\"answer2\":\"kadapa\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"url": "{{MuleEndPoint1}}/user/survenka",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userName\":\"spagaria\"\n}"
 						},
 						"description": ""
 					},
@@ -539,8 +639,8 @@
 				{
 					"name": "getUser_failure",
 					"request": {
-						"url": "{{MuleEndPoint1}}/user",
-						"method": "POST",
+						"url": "{{MuleEndPoint1}}/user/skurra",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -559,8 +659,8 @@
 				{
 					"name": "validateUserByUsername",
 					"request": {
-						"url": "{{MuleEndPoint1}}/validateUser",
-						"method": "POST",
+						"url": "{{MuleEndPoint1}}/validateUser/survenka",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -579,8 +679,8 @@
 				{
 					"name": "validateUserByPhone",
 					"request": {
-						"url": "{{MuleEndPoint1}}/validateUser",
-						"method": "POST",
+						"url": "{{MuleEndPoint1}}/validateUser/8008885847",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -599,8 +699,8 @@
 				{
 					"name": "validateUserByEmail",
 					"request": {
-						"url": "{{MuleEndPoint1}}/validateUser",
-						"method": "POST",
+						"url": "{{MuleEndPoint1}}/validateUser/survenka@teksystems.com1",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -617,21 +717,23 @@
 					"response": []
 				},
 				{
-					"name": "validateUser",
+					"name": "getPwdQuestions_userName",
 					"request": {
-						"url": "{{MuleEndPoint1}}/validateUser",
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"userName\":\"surevell\",\n\t\"phone\":8008885847,\n\t\"email\":\"survenka@teksystems.com\"\n}"
-						},
+						"url": "{{MuleEndPoint1}}/getPwdQuestions/survenka@teksystems.com",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPwdQuestions_email",
+					"request": {
+						"url": "{{MuleEndPoint1}}/getPwdQuestions/survenka@teksystems.com",
+						"method": "GET",
+						"header": [],
+						"body": {},
 						"description": ""
 					},
 					"response": []
@@ -662,6 +764,26 @@
 			"name": "dailyMenu",
 			"request": {
 				"url": "http://localhost:8081/cateringservices/getTodayMenu",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"menuDay\":\"Thursday\",\n\t\"menuDate\":\"03-08-2018\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "dailyMenu copy",
+			"request": {
+				"url": "http://localhost:8081/menuforToday",
 				"method": "POST",
 				"header": [
 					{
